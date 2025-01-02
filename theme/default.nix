@@ -23,7 +23,11 @@ in {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     targets.spicetify.enable = false;
-    #    cursor.package = pkgs.catppuccin-cursors.mochaMauve;
+    cursor = {
+      package = pkgs.catppuccin-cursors;
+      name = "catppuccin-mocha";
+      size = 24;
+    };
     image = wall;
     polarity = "dark"; # "light" or "either
     opacity = {
