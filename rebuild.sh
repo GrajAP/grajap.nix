@@ -17,6 +17,6 @@ current=$(nixos-rebuild list-generations | grep current)
 
 git add *
 git commit -am "$current"
-sudo git push
+git push
 notify-send "Rebuild finished"
 # Commit all changes witih the generation metadata
