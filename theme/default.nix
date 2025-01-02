@@ -21,7 +21,7 @@ in {
   };
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-latte.yaml";
     targets.spicetify.enable = false;
     #    cursor.package = pkgs.catppuccin-cursors.mochaMauve;
     image = wall;

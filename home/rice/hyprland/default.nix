@@ -79,7 +79,7 @@
       longitude = "21";
       temperature = {
         day = 6200;
-        night = 1000;
+        night = 4000;
       };
       systemdTarget = "hyprland-session.target";
     };
