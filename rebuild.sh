@@ -8,13 +8,15 @@ alejandra /etc/nixos/ &>/dev/null \
 notify-send "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
+sudo nix flake upgrade
 nh os switch
+
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
 
 git add *
 git commit -am "$current"
-git push
+sudo git push
 notify-send "Rebuild finished"
 # Commit all changes witih the generation metadata
