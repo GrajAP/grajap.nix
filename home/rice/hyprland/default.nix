@@ -10,6 +10,7 @@
     libnotify
     swaybg
     wireplumber
+    nwg-look
     wf-recorder
     brightnessctl
     pamixer
