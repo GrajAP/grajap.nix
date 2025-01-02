@@ -13,5 +13,8 @@ nh os switch
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
 
+git add *
+git commit -am "$current"
+git push
 notify-send "Rebuild finished"
 # Commit all changes witih the generation metadata
