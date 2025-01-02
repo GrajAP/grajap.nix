@@ -8,7 +8,7 @@ alejandra /etc/nixos/ &>/dev/null \
 notify-send "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nix flake upgrade
+sudo nix flake update
 nh os switch
 
 
