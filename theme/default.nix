@@ -24,7 +24,7 @@ in {
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     targets.spicetify.enable = false;
     cursor.package = pkgs.catppuccin-cursors.mochaMauve;
-    cursor.name = "Catppuccin-Mocha-Mauve-Cursors";
+    cursor.name = "Catppuccin-Mocha-Dark-Cursors";
     cursor.size = 24;
     image = wall;
     polarity = "dark"; # "light" or "either
