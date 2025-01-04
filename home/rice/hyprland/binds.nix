@@ -64,22 +64,21 @@ in {
       "${mod},K,movefocus,u"
       "${mod},L,movefocus,r"
 
-      "${mod} Control_L, h, movewindow, l"
-      "${mod} Control_L, j, movewindow, d"
-      "${mod} Control_L, k, movewindow, u"
-      "${mod} Control_L, l, movewindow, r"
+      "SUPERALT, h, movewindow, l"
+      "SUPERALT, j, movewindow, d"
+      "SUPERALT, k, movewindow, u"
+      "SUPERALT, l, movewindow, r"
 
       # volume controls
-      ",XF86AudioRaiseVolume, exec, nc -U /tmp/barbie-vol.sock; pamixer -i 5"
-      ",XF86AudioLowerVolume, exec, nc -U /tmp/barbie-vol.sock; pamixer -d 5"
+      ",XF86AudioRaiseVolume, exec, pamixer -i 5"
+      ",XF86AudioLowerVolume, exec, pamixer -d 5"
       ",XF86AudioMute, exec, pamixer -t"
       ",XF86AudioMicMute, exec, micmute"
 
-      # brightness controls
-      ",XF86MonBrightnessUp, exec, nc -U /tmp/barbie-bl.sock; brightnessctl set +10%"
-      ",XF86MonBrightnessDown, exec, nc -U /tmp/barbie-bl.sock; brightnessctl set 10%-"
-      "SUPERALT, L, resizeactive, 80 0"
-      "SUPERALT, H, resizeactive, -80 0"
+      "${mod} Control_L, H, resizeactive, -80 0"
+      "${mod} Control_L, J, resizeactive, 0 -80"
+      "${mod} Control_L, K, resizeactive, 0 80"
+      "${mod} Control_L, L, resizeactive, 80 0"
     ];
     # binds that are locked, a.k.a will activate even while an input inhibitor is active
     bindl = [
