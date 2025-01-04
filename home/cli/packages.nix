@@ -23,6 +23,7 @@ in {
     gcc
     rustup
     neovim
+    neovide
     killall
     zoxide
     wget
