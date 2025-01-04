@@ -76,8 +76,8 @@ in {
       ",XF86AudioMicMute, exec, micmute"
 
       "${mod} Control_L, H, resizeactive, -80 0"
-      "${mod} Control_L, J, resizeactive, 0 -80"
-      "${mod} Control_L, K, resizeactive, 0 80"
+      "${mod} Control_L, J, resizeactive, 0 80"
+      "${mod} Control_L, K, resizeactive, 0 -80"
       "${mod} Control_L, L, resizeactive, 80 0"
     ];
     # binds that are locked, a.k.a will activate even while an input inhibitor is active
