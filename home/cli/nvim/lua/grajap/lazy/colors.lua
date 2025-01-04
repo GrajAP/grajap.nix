@@ -1,5 +1,15 @@
-return { "catppuccin/nvim", name = "catppuccin", priority = 1000,
-require("catppuccin").setup({
+function ColorMyPencils(color)
+	color = color or "catppuccin-mocha"
+	vim.cmd.colorscheme(color)
+
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+end
+
+return {
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000, config = function()
+           require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "mocha",
@@ -46,11 +56,11 @@ require("catppuccin").setup({
         },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
-});
+})
 
 -- setup must be called before loading
 
-
-
-}
-
+            vim.cmd("colorscheme catppuccin")
+            -- ColorMyPencils()
+        end
+    }}
