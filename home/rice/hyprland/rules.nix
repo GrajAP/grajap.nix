@@ -28,6 +28,7 @@
 
       "float,class:udiskie"
       "float, class:^(imv)$"
+      "opacity 0.8, class^(neovide)$"
 
       # throw sharing indicators away
 
