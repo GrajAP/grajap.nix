@@ -15,6 +15,7 @@ require("lazy").setup({
     spec = "grajap.lazy",
     change_detection = { notify = false }
 })
+vim.cmd.colorscheme "catppuccin"
 --[[
 require("lazy").setup({
   use("~/personal/harpoon")
