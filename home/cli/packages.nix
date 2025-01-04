@@ -21,6 +21,7 @@ in {
     texlive
     python3
     gcc
+    rustup
     neovim
     killall
     zoxide
