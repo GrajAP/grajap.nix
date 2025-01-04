@@ -1,8 +1,8 @@
 {...}: {
-  hardware = {
+  services = {
     pulseaudio.support32Bit = true;
-    enableAllFirmware = true;
   };
+  hardware.enableAllFirmware = true;
   services.pipewire = {
     enable = true;
     alsa = {
