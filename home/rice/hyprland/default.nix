@@ -20,7 +20,6 @@
     swappy
     grimblast
     catppuccin-cursors
-    catppuccin-papirus-folders
     catppuccin-qt5ct
     catppuccin-fcitx5
     hyprpicker

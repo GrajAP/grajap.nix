@@ -32,12 +32,7 @@
         kb_layout = "pl";
         kb_options = "caps:escape";
         follow_mouse = 1;
-        sensitivity = 0.0;
-        touchpad = {
-          clickfinger_behavior = true;
-          tap-to-click = false;
-          scroll_factor = 0.5;
-        };
+        sensitivity = -1.0;
       };
 
       general = {
