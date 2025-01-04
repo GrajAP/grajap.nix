@@ -60,13 +60,14 @@ in {
 
     binde = [
       "${mod},H,movefocus,l"
-      "${mod},L,movefocus,r"
-      "${mod},K,movefocus,u"
       "${mod},J,movefocus,d"
-      "${mod} Control_L, l, resizeactive, 50 0"
-      "${mod} Control_L, h, resizeactive, -50 0"
-      "${mod} Control_L, k, resizeactive, 0 -50"
-      "${mod} Control_L, j, resizeactive, 0 50"
+      "${mod},K,movefocus,u"
+      "${mod},L,movefocus,r"
+
+      "${mod} Control_L, h, movewindow, l"
+      "${mod} Control_L, j, movewindow, d"
+      "${mod} Control_L, k, movewindow, u"
+      "${mod} Control_L, l, movewindow, r"
 
       # volume controls
       ",XF86AudioRaiseVolume, exec, nc -U /tmp/barbie-vol.sock; pamixer -i 5"
