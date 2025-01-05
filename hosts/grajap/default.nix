@@ -13,6 +13,7 @@
   services = {
     fprintd.enable = true;
     thermald.enable = true;
+    xserver.videoDrivers = ["amdgpu"];
     undervolt = {
       enable = true;
       tempBat = 75;
@@ -33,6 +34,10 @@
     package = pkgs.bluez5-experimental;
   };
   # https://github.com/NixOS/nixpkgs/issues/114222
+  hardware.opengl = {
+    enable = true;
+    driSupport32Bit = true;
+  };
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
