@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
-        lutris
+    lutris
     github-desktop
     #google-chrome
     udev
