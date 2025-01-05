@@ -54,7 +54,7 @@ nnoremap <M-l> <cmd>bnext<cr>
 
 xnoremap <leader>p "\"_dP
 
-" Autoformat on save
+" Autoformat on save 
 augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat

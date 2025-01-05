@@ -1,4 +1,4 @@
--- require("grajap")
+--require('grajap')
 --     NOO YOU CANT JUST PUT
 --     ALL OF YOUR NVIM CONFIG
 --     IN A SINGLE UNSTRUCTURED

@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./zsh
+    ./nvim
     ./neovide.nix
     ./starship.nix
     ./bottom.nix
