@@ -28,7 +28,7 @@ vim.loader.enable()
 
 vim.opt.termguicolors = true
 
-require("incline").setup({})
+--require("incline").setup({})
 require("fidget").setup({})
 require("scope").setup({})
 
