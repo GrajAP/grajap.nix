@@ -1,11 +1,11 @@
 {pkgs, ...}: let
   wttr = pkgs.stdenv.mkDerivation {
-    name = "myscript";
+    name = "wttr";
     propagatedBuildInputs = [
       pkgs.python3
     ];
     dontUnpack = true;
-    installPhase = "install -Dm755 ${./waybar-wttr.py} $out/bin/waybar-wttr";
+    installPhase = "install -Dm755 ${./wttr.py} $out/bin/wttr";
   };
 in {
   programs.waybar = {
