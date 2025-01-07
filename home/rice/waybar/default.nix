@@ -109,7 +109,7 @@
         modules-left = [
           "hyprland/workspaces"
         ];
-        modules-center = ["cpu"];
+        modules-center = ["cpu custom/weather"];
         modules-right = ["pulseaudio" "network" "clock"];
         "hyprland/workspaces" = {
           on-click = "activate";
