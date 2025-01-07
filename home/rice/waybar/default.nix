@@ -5,7 +5,7 @@
       pkgs.python3
     ];
     dontUnpack = true;
-    installPhase = "install -Dm755 ${./wttr.py} $out/bin/wttr";
+    installPhase = "install -Dm755 ${./wttr.py} $out/wttr";
   };
 in {
   programs.waybar = {
@@ -149,7 +149,7 @@ in {
           format = "{}";
           tooltip = true;
           interval = 3600;
-          exec = wttr;
+          exec = "${wttr}";
           return-type = "json";
         };
         "custom/search" = {
