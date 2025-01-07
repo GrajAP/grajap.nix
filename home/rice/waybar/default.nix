@@ -109,7 +109,7 @@
         modules-left = [
           "hyprland/workspaces"
         ];
-        modules-center = [];
+        modules-center = ["cpu"];
         modules-right = ["pulseaudio" "network" "clock"];
         "hyprland/workspaces" = {
           on-click = "activate";
@@ -130,6 +130,10 @@
 
           persistent_workspaces = {
             "*" = 0;
+          };
+          cpu = {
+            interval = 5;
+            format = "  {}%";
           };
         };
         "custom/search" = {
