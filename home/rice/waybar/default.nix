@@ -176,7 +176,7 @@
           format-alt = "󰤨";
           format-disconnected = "󰤭";
           tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
-          on-click = "pkill -9 nm-connection-editor || ${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
+          on-click = "pkill -f nm-connection-editor || ${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
         };
         pulseaudio = {
           scroll-step = 5;
