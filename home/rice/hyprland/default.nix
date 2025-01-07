@@ -67,14 +67,6 @@
       ];
     };
   };
-
-  services.gammastep = {
-    enable = true;
-    provider = "manual";
-    latitude = 52.0;
-    longitude = 21.0;
-  };
-
   services = {
     wlsunset = {
       # TODO: fix opaque red screen issue
