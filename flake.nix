@@ -18,7 +18,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-     };
+  };
 
   outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations.grajap = nixpkgs.lib.nixosSystem {
