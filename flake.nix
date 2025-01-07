@@ -1,6 +1,5 @@
 {
-  description = "Nixos config flake";
-
+  description = "GrajAPix";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";

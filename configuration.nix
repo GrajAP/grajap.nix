@@ -7,8 +7,6 @@
   home-manager = {
     #backupFileExtension = "backup";
     extraSpecialArgs = {inherit inputs;};
-    users.grajap = {
-      imports = [./home];
-    };
+    users.grajap.imports = [./home];
   };
 }
