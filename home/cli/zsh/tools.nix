@@ -3,7 +3,6 @@
     udiskie.enable = true;
     gpg-agent = {
       enable = true;
-      pinentryFlavor = "gnome3";
       enableSshSupport = true;
       enableZshIntegration = true;
     };
@@ -46,7 +45,6 @@
       enable = true;
       config = {
         pager = "less -FR";
-        theme = "catppuccin-mocha";
       };
       themes = {
         catppuccin-mocha = {

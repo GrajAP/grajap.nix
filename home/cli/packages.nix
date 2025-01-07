@@ -11,10 +11,6 @@
       beamer
       ;
   };
-  pandoc-watch = pkgs.writeScriptBin "wpandoc" ''
-    #!/bin/sh
-    while inotifywait -e close_write $1; do pandoc $@; done
-  '';
 in {
   home.packages = with pkgs; [
     fastfetch
@@ -28,8 +24,6 @@ in {
     killall
     zoxide
     wget
-    pandoc-watch
-    pandoc
     # Tbh should be preinstalled
     gnumake
     # Runs programs without installing them
