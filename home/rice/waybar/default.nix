@@ -147,7 +147,7 @@ in {
           };
           cpu = {
             interval = 5;
-            format = "{}%";
+            format = "{}";
           };
         };
         "custom/weather" = {
