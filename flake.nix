@@ -34,7 +34,6 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        inputs.lix-module.nixosModules.default
         inputs.stylix.nixosModules.stylix
       ];
     };
