@@ -123,7 +123,7 @@ in {
         modules-left = [
           "hyprland/workspaces"
         ];
-        modules-center = ["cpu" "custom/weather"];
+        modules-center = ["custom/weather"];
         modules-right = ["pulseaudio" "network" "clock"];
         "hyprland/workspaces" = {
           on-click = "activate";
@@ -144,10 +144,6 @@ in {
 
           persistent_workspaces = {
             "*" = 0;
-          };
-          cpu = {
-            interval = 5;
-            format = "{}";
           };
         };
         "custom/weather" = {
