@@ -18,15 +18,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-    nixpak = {
-      url = "github:nixpak/nixpak";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs-lib.follows = "nixpkgs";
-    };
-  };
+     };
 
   outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations.grajap = nixpkgs.lib.nixosSystem {
