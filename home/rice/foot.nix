@@ -1,9 +1,4 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    libsixel
-    foot
-    # for displaying images
-  ];
+{...}: {
   programs.foot = {
     enable = true;
     server.enable = false;

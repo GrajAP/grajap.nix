@@ -21,6 +21,7 @@ in {
     texlive
     python3
     gcc
+    lsix
     rustup
     neovim
     neovide
@@ -51,6 +52,7 @@ in {
 
     # download from yt and other websites
     yt-dlp
+    catimg
 
     # man pages for tiktok attention span mfs
     tealdeer
