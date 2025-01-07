@@ -1,4 +1,17 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  wttr = pkgs.stdenv.mkDerivation {
+    name = "myscript";
+    propagatedBuildInputs = [
+      (pkgs.python3.withPackages (pythonPackages:
+        with pythonPackages; [
+          consul
+          six
+        ]))
+    ];
+    dontUnpack = true;
+    installPhase = "install -Dm755 ${./waybar-wttr.py} $out/bin/myscript";
+  };
+in {
   programs.waybar = {
     enable = true;
     # style = with theme.colors; ''
@@ -140,7 +153,7 @@
           format = "{}";
           tooltip = true;
           interval = 3600;
-          exec = "${./waybar-wttr.py}";
+          exec = "${wttr}";
           return-type = "json";
         };
         "custom/search" = {
