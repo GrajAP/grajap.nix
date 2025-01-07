@@ -17,7 +17,7 @@
   '';
 in {
   home.packages = with pkgs; [
-    neofetch
+    fastfetch
     texlive
     python3
     gcc
