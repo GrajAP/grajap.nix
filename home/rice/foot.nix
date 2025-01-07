@@ -77,7 +77,7 @@
         unicode-input = "Control+Shift+i";
       };
       search-bindings = {
-        cursor-home = " Home Control+A";
+        cursor-home = "Control+A";
       };
       mouse-bindings = {
         selection-override-modifiers = "Shift";
