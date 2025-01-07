@@ -133,7 +133,7 @@
           };
           cpu = {
             interval = 5;
-            format = "  {}%";
+            format = "{}%";
           };
         };
         "custom/search" = {
