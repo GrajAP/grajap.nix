@@ -136,6 +136,13 @@
             format = "{}%";
           };
         };
+        "custom/weather" = {
+          format = "{}";
+          tooltip = true;
+          interval = 3600;
+          exec = "${./waybar-wttr.py}";
+          return-type = "json";
+        };
         "custom/search" = {
           format = " ";
           tooltip = false;
