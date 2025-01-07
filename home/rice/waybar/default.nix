@@ -1,8 +1,4 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   programs.waybar = {
     enable = true;
     # style = with theme.colors; ''
@@ -112,7 +108,6 @@
         spacing = 7;
         modules-left = [
           "hyprland/workspaces"
-          "battery"
         ];
         modules-center = [];
         modules-right = ["pulseaudio" "network" "clock"];
@@ -181,6 +176,7 @@
           format-alt = "󰤨";
           format-disconnected = "󰤭";
           tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
+          on-click = "${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
         };
         pulseaudio = {
           scroll-step = 5;
