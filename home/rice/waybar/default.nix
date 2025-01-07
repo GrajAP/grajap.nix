@@ -2,7 +2,12 @@
   wttr = pkgs.stdenv.mkDerivation {
     name = "wttr";
     propagatedBuildInputs = [
-      pkgs.python3
+      (pkgs.python3.withPackages (pythonPackages:
+        with pythonPackages; [
+          consul
+          six
+          requests
+        ]))
     ];
     dontUnpack = true;
     installPhase = "install -Dm755 ${./wttr.py} $out/wttr";
