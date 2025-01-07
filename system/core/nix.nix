@@ -31,10 +31,6 @@
       # <3333
       allowUnfree = true;
       allowBroken = true;
-      permittedInsecurePackages = [
-        "openssl-1.1.1u"
-        "electron-25.9.0"
-      ];
 
       overlays = [
         # workaround for: https://github.com/NixOS/nixpkgs/issues/154163
@@ -59,11 +55,8 @@
   };
 
   nix = {
-    gc = {
-      automatic = true;
-      dates = "daily";
-      options = "--delete-older-than 3d";
-    };
+    gc.automatic = false;
+    package = pkgs.lix;
 
     # Make builds run with low priority so my system stays responsive
     daemonCPUSchedPolicy = "idle";
@@ -98,7 +91,7 @@
       max-jobs = "auto";
       # continue building derivations if one fails
       keep-going = true;
-      log-lines = 20;
+      log-lines = 40;
       extra-experimental-features = ["flakes" "nix-command" "recursive-nix" "ca-derivations"];
 
       # use binary cache, its not gentoo
@@ -115,15 +108,21 @@
       ];
     };
   };
-  system.autoUpgrade = {
-    enable = false;
-    flake = inputs.self.outPath;
-    flags = [
-      "nixpkgs"
-      "-L"
-    ];
-    dates = "09:00";
-    randomizedDelaySec = "45min";
+  system = {
+    switch = {
+      enable = false;
+      enableNg = true;
+    };
+    autoUpgrade = {
+      enable = false;
+      flake = inputs.self.outPath;
+      flags = [
+        "nixpkgs"
+        "-L"
+      ];
+      dates = "09:00";
+      randomizedDelaySec = "45min";
+    };
+    stateVersion = "24.11"; # DONT TOUCH THIS
   };
-  system.stateVersion = "24.11"; # DONT TOUCH THIS
 }
