@@ -149,7 +149,7 @@ in {
           format = "{}";
           tooltip = true;
           interval = 3600;
-          exec = "${wttr}/bin/wttr";
+          exec = "${wttr}/wttr";
           return-type = "json";
         };
         "custom/search" = {
