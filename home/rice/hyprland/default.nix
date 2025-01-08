@@ -23,8 +23,6 @@
     catppuccin-qt5ct
     catppuccin-fcitx5
     hyprpicker
-    wl-gammarelay-rs
-    wl-gammarelay-applet
     wl-clip-persist
     wl-clipboard
     pngquant
