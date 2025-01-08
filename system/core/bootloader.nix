@@ -7,7 +7,7 @@
 in {
   environment.systemPackages = [
     # For debugging and troubleshooting Secure Boot.
-    #pkgs.os-prober
+    pkgs.os-prober
     pkgs.sbctl
   ];
   boot = {
