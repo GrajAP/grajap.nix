@@ -33,7 +33,7 @@
       # throw sharing indicators away
 
       "workspace 3, title:^(.*(Disc|WebC)ord.*)$"
-      "workspace 3, title:^(.*Caprine.*)$"
+      "workspace 3, class:^(caprine)$"
       "workspace 2, class:^(firefox)$"
     ];
   };
