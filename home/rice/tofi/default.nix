@@ -20,11 +20,11 @@ in {
     ascii-input = false
     outline-width = 5
     border-width = 2
-      outline-color = ${config.lib.stylix.colors.withHashtag.base02}
-     border-color = ${config.lib.stylix.colors.withHashtag.base0E}
-      background-color = ${config.lib.stylix.colors.withHashtag.base00}
-      text-color = ${config.lib.stylix.colors.withHashtag.base05}
-      selection-color = ${config.lib.stylix.colors.withHashtag.base0E}
+    outline-color = ${config.lib.stylix.colors.withHashtag.base02}
+    border-color = ${config.lib.stylix.colors.withHashtag.base0E}
+    background-color = ${config.lib.stylix.colors.withHashtag.base00}
+    text-color = ${config.lib.stylix.colors.withHashtag.base05}
+    selection-color = ${config.lib.stylix.colors.withHashtag.base0E}
     min-input-width = 120
     late-keyboard-init = true
     result-spacing = 10
