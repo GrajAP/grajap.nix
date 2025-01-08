@@ -9,7 +9,6 @@
     davinci-resolve
     nemo
     libreoffice-fresh
-    webcord
     calcurse
     spotify-player
     signal-desktop
