@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./discord.nix
+    #   ./discord.nix
     ./media.nix
     ./firefox.nix
     ./rnnoise.nix
