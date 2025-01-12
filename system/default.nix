@@ -3,7 +3,7 @@
     # vesktop # If you prefer this
 
     (discord.override {
-      withOpenASAR = true; # can do this here too
+      #withOpenASAR = true; # can do this here too
       withVencord = true;
     })
   ];
