@@ -7,12 +7,9 @@
     settings = {
       exec-once = [
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-        "pamixer -m"
         "brightnessctl set 100%"
-        "wl-gammarelay"
         "firefox"
         "caprine"
-        "discord"
         "vesktop"
         "foot"
         # foot terminal server
