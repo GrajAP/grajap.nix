@@ -13,6 +13,7 @@
         "firefox"
         "caprine"
         "discord"
+        "vesktop"
         "foot"
         # foot terminal server
         "${lib.optionalString config.programs.foot.server.enable ''foot --server''}"

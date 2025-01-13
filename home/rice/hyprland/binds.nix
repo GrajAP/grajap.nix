@@ -27,6 +27,7 @@ in {
         "${mod},SPACE,exec,$(tofi-drun)"
         "${mod},F,exec,firefox"
         "${mod},D,exec,discord"
+        "${mod},D,exec,vesktop"
         "${mod},C,killactive"
         "${mod},P,pseudo"
 
