@@ -4,6 +4,9 @@
   ...
 }: {
   services = {
+    kanata = {
+      enable = true;
+    };
     dbus = {
       packages = with pkgs; [dconf gcr udisks2];
       enable = true;
