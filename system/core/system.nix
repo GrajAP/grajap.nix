@@ -27,7 +27,7 @@
             (defalias
               escctrl (tap-hold 100 100 esc lctl)
               a (multi f24 (tap-hold $tap-time $hold-time a lmet))
-              s (multi f24 (tap-hold $tap-time $hold-time s lalt))
+              s (multi f24 (tap-hold $tap-time $hold-time s ralt))
               d (multi f24 (tap-hold $tap-time $hold-time d lsft))
               f (multi f24 (tap-hold $tap-time $hold-time f lctl))
               j (multi f24 (tap-hold $tap-time $hold-time j rctl))
