@@ -52,7 +52,7 @@ in {
 
         "${mod},Period,exec, tofi-emoji"
 
-        "${modshift},;,exec,wlogout"
+        "${mod},;,exec,wlogout"
       ]
       ++ workspaces;
 
