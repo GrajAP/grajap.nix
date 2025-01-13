@@ -39,8 +39,10 @@ in {
         "${mod},F11,fullscreen," # fullscreen focused window
 
         # workspace controls
-        "${modshift},right,movetoworkspace,+1" # move focused window to the next ws
-        "${modshift},left,movetoworkspace,-1" # move focused window to the previous ws
+        "${modshift},h,movetoworkspace,+1" # move focused window to the next ws
+        "${modshift},j,workspace,+1" # move focused window to the next ws
+        "${modshift},k,workspace,-1" # move focused window to the next ws
+        "${modshift},l,movetoworkspace,-1" # move focused window to the previous ws
         "${mod},mouse_down,workspace,e+1" # move to the next ws
         "${mod},mouse_up,workspace,e-1" # move to the previous ws
 
