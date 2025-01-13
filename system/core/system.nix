@@ -10,8 +10,8 @@
         internalKeyboard = {
           devices = [
             "/dev/input/by-path/pci-0000:0e:00.3-usb-0:1:1.0-event-kbd"
-            "/dev/input/by-path/pci-0000:0e:00.3-usb-0:2:1.1-event-kbd"
-            "/dev/input/by-path/pci-0000:0e:00.3-usb-0:1:1.2-event-kbd"
+            #"/dev/input/by-path/pci-0000:0e:00.3-usb-0:2:1.1-event-kbd"
+            #"/dev/input/by-path/pci-0000:0e:00.3-usb-0:1:1.2-event-kbd"
           ];
           extraDefCfg = "process-unmapped-keys yes";
           config = ''
@@ -20,8 +20,8 @@
               caps a s d f j k l ;
             )
             (defvar
-              tap-time 150
-              hold-time 200
+              tap-time 100
+              hold-time 150
             )
 
             (defalias
