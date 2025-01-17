@@ -22,7 +22,7 @@ return {
             {},
             vim.lsp.protocol.make_client_capabilities(),
             cmp_lsp.default_capabilities())
-
+        require'lspconfig'.slint_lsp.setup{}
         require("fidget").setup({})
         require("mason").setup()
         require("lspconfig").nixd.setup({
