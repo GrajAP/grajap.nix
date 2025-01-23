@@ -7,9 +7,8 @@ alejandra /etc/nixos/ &>/dev/null \
 
 notify-send "NixOS Rebuilding..."
 
-sudo nix flake update
-nh os switch
-
+nh os switch --update
+nh clean all --keep 3
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
