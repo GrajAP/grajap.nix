@@ -74,7 +74,6 @@ in {
         network = {
           format-wifi = "󰤨 essid";
           format-ethernet = "󰈀";
-          format-alt = "󱛇";
           format-disconnected = "󰤭";
           tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
           on-click = "pkill -f nm-connection-editor || ${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
