@@ -30,6 +30,7 @@
       # Wolności oddać nie umiem
       # <3333
       allowUnfree = true;
+      allowUnsupportedSystem = true;
       allowBroken = true;
 
       overlays = [
