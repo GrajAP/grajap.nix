@@ -21,13 +21,14 @@ in {
   };
   stylix = {
     enable = true;
+    autoEnable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    polarity = "dark"; # "light" or "either
     targets.spicetify.enable = false;
     cursor.package = pkgs.catppuccin-cursors.mochaMauve;
     cursor.name = "Catppuccin-Mocha-Dark-Cursors";
     cursor.size = 24;
     image = wall;
-    polarity = "dark"; # "light" or "either
     opacity = {
       applications = 1.0;
       terminal = 0.8;
