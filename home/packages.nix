@@ -2,7 +2,7 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     github-desktop
-       teams
+    teams-for-linux
     brave
     #google-chrome
     udev
