@@ -16,6 +16,7 @@ in {
     fastfetch
     texlive
     python3
+    thefuck
     gcc
     nodejs
     lsix
