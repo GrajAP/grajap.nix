@@ -17,6 +17,7 @@ in {
     texlive
     python3
     gcc
+    nodejs
     lsix
     rustup
     neovim
