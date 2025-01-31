@@ -14,6 +14,7 @@
 in {
   home.packages = with pkgs; [
     fastfetch
+    ollama
     texlive
     python3
     gcc

@@ -4,6 +4,12 @@
   ...
 }: {
   services = {
+    ollama = {
+      enable = true;
+      loadModels = [deepseek-r1:70b];
+    };
+
+    open-webui.enable = true;
     kanata = {
       enable = true;
       keyboards = {
