@@ -6,7 +6,11 @@
   services = {
     ollama = {
       enable = true;
-      loadModels = ["deepseek-r1:70b"];
+      #acceleration = "rocm";
+      environmentVariables = {
+        HCC_AMDGPU_TARGET = "gfx803"; # used to be necessary, but doesn't seem to anymore
+      };
+      rocmOverrideGfx = "8.0.3";
     };
 
     open-webui.enable = true;
