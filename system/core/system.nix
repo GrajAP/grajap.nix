@@ -6,7 +6,7 @@
   services = {
     ollama = {
       enable = true;
-      loadModels = [deepseek-r1:70b];
+      loadModels = ["deepseek-r1:70b"];
     };
 
     open-webui.enable = true;
