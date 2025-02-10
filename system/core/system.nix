@@ -13,7 +13,7 @@
       rocmOverrideGfx = "8.0.3";
     };
 
-    open-webui.enable = true;
+    #open-webui.enable = true;
     kanata = {
       enable = true;
       keyboards = {
