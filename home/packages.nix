@@ -11,6 +11,7 @@
     davinci-resolve
     nemo
     libreoffice-fresh
+    glib
     calcurse
     spotify-player
     signal-desktop
