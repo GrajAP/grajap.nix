@@ -19,6 +19,8 @@
       alejandra
       nvd
       statix
+      glib
+      libglibutil
       nix-output-monitor
     ];
     defaultPackages = [];

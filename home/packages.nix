@@ -2,7 +2,6 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     github-desktop
-    libglibutil
     teams-for-linux
     brave
     #google-chrome
@@ -12,7 +11,6 @@
     davinci-resolve
     nemo
     libreoffice-fresh
-    glib
     calcurse
     spotify-player
     signal-desktop
