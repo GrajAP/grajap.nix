@@ -34,7 +34,7 @@
     enable = true;
     config.common.default = "*";
     extraPortals = [
-      pkgs.xdg-desktop-portal-kde
+      pkgs.kdePackages.xdg-desktop-portal-kde
     ];
   };
 }
