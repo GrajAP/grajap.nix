@@ -1,7 +1,6 @@
 {...}: {
   hardware.enableAllFirmware = true;
   services = {
-    pulseaudio.support32Bit = true;
     pipewire = {
       enable = true;
       alsa = {
@@ -12,5 +11,6 @@
       pulse.enable = true;
       jack.enable = true;
     };
+    pulseaudio.support32Bit = true;
   };
 }

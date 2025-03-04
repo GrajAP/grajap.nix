@@ -1,5 +1,5 @@
 {...}: let
-  browser = [".desktop"];
+  browser = ["firefox.desktop"];
 
   associations = {
     "text/html" = browser;

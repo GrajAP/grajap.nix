@@ -1,9 +1,8 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    vesktop # If you prefer this
-
+    vesktop
     (discord.override {
-      withOpenASAR = false; # can do this here too
+      withOpenASAR = false;
       withVencord = true;
     })
   ];

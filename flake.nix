@@ -1,25 +1,37 @@
 {
-  description = "GrajAPix";
+  description = "nixAP";
   outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations.grajap = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
+        (import ./hosts/grajap)
         ./configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
+      ];
+    };
+    nixosConfigurations.dellap = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+
+      modules = [
+        (import ./disko.nix {device = "/dev/sda";})
+        (import ./hosts/dellap)
+        ./configuration.nix
+        inputs.disko.nixosModules.default
+        inputs.stylix.nixosModules.stylix
+        inputs.home-manager.nixosModules.default
       ];
     };
   };
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
-    hyprcontrib = {
-      url = "github:hyprwm/contrib";
+    disko = {
+      url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #   nixcord.url = "github:kaylorben/nixcord";
-    nix-index-db = {
-      url = "github:Mic92/nix-index-database";
+    hyprcontrib = {
+      url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {

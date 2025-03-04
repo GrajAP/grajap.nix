@@ -6,7 +6,6 @@
 
   environment = {
     variables = {
-      #     NIXOS_OZONE_WL = "1";
       __GL_GSYNC_ALLOWED = "1";
       __GL_VRR_ALLOWED = "1";
       _JAVA_AWT_WM_NONEREPARENTING = "1";
@@ -19,7 +18,7 @@
       QT_AUTO_SCREEN_SCALE_FACTOR = "1";
       QT_QPA_PLATFORM = "wayland;xcb";
       DISABLE_QT_COMPAT = "0";
-      QT_WAYLAND_DISABLE_WINDOWDECORATION = "0";
+      QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
       MOZ_ENABLE_WAYLAND = "1";
       WLR_BACKEND = "vulkan";
       WLR_RENDERER = "vulkan";
@@ -33,8 +32,10 @@
   xdg.portal = {
     enable = true;
     config.common.default = "*";
-    extraPortals = [
-      pkgs.kdePackages.xdg-desktop-portal-kde
+    extraPortals = with pkgs; [
+      kdePackages.xdg-desktop-portal-kde
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
     ];
   };
 }
